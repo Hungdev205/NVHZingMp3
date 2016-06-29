@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NVHZingMp3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zing-mp3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mbo-so-pqP">
+                                <rect key="frame" x="0.0" y="168" width="320" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Hvt-VS-dwQ"/>
+                                    <constraint firstAttribute="width" constant="320" id="Lpy-jo-oro"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZING MP3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i0-gq-lXb">
+                                <rect key="frame" x="55" y="498" width="210" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="GHj-nX-crd"/>
+                                    <constraint firstAttribute="height" constant="50" id="muC-JT-IYD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="41"/>
+                                <color key="textColor" red="0.99947947263717651" green="0.0031929428223520517" blue="0.25310397148132324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hung Nguyen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ5-Fc-XOP">
+                                <rect key="frame" x="60" y="28" width="200.5" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="xQq-cZ-LUF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8389245867729187" green="0.82890743017196655" blue="0.95732599496841431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1i0-gq-lXb" firstAttribute="top" secondItem="mbo-so-pqP" secondAttribute="bottom" constant="80" id="1kd-d8-K2h"/>
+                            <constraint firstAttribute="trailing" secondItem="1i0-gq-lXb" secondAttribute="trailing" constant="55" id="IlM-ZR-15w"/>
+                            <constraint firstItem="1i0-gq-lXb" firstAttribute="centerX" secondItem="mbo-so-pqP" secondAttribute="centerX" id="Lv4-38-HgB"/>
+                            <constraint firstItem="mbo-so-pqP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wqm-yZ-18P"/>
+                            <constraint firstAttribute="trailing" secondItem="mbo-so-pqP" secondAttribute="trailing" id="ZZl-4D-Hs9"/>
+                            <constraint firstItem="fZ5-Fc-XOP" firstAttribute="centerX" secondItem="mbo-so-pqP" secondAttribute="centerX" id="gKI-xI-Toa"/>
+                            <constraint firstItem="mbo-so-pqP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="lZv-xs-gDY"/>
+                            <constraint firstItem="mbo-so-pqP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mDa-Bp-Jp9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1i0-gq-lXb" secondAttribute="bottom" constant="20" id="rqx-G3-HBI"/>
+                            <constraint firstItem="1i0-gq-lXb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="55" id="yF7-qn-zVH"/>
+                            <constraint firstItem="mbo-so-pqP" firstAttribute="top" secondItem="fZ5-Fc-XOP" secondAttribute="bottom" constant="103" id="yU0-6V-ovx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="img_logo" destination="mbo-so-pqP" id="eTh-95-AUC"/>
+                        <outlet property="lbl_myName" destination="fZ5-Fc-XOP" id="OWH-GW-9kR"/>
+                        <outlet property="lbl_text" destination="1i0-gq-lXb" id="fiS-Pv-wi6"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="w5A-M9-f69"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="294"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="zing-mp3.jpg" width="1024" height="1024"/>
+    </resources>
+</document>
